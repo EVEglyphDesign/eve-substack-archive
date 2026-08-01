@@ -208,6 +208,9 @@ def build():
               'platform changes its mind.</p></div></header>'
             + '<main><div class="wrap">'
             + "\n".join(cards)
+            + '<h2>Review notes</h2><p>What the archive says once it is read end to end. '
+              '<a href="./review/EgD-REV-001.html">Reading Zane Hall (EgD-REV-001)</a> &middot; '
+              '<a href="./review/EVEglyphDesign_Reading_Zane_Hall.pdf">controlled PDF</a>.</p>'
             + '<h2>How it works</h2><p>Every post is pulled from the publication\'s own API into '
               'Markdown under <code>archive/&lt;key&gt;/posts/</code>, hashed, and committed. '
               'The register of tracked publications is <code>sources.json</code>. Re-run '

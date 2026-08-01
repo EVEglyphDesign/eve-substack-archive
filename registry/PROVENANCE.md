@@ -1,6 +1,6 @@
 # Provenance register
 
-`EgD-ARC-001` · Key ID `EgD-KEY-2026-07` · restamped **2026-08-01T14:24:27Z**
+`EgD-ARC-001` · Key ID `EgD-KEY-2026-07` · restamped **2026-08-01T14:27:25Z**
 
 SHA-256 of every mirrored file, taken at the moment of the last ingest. A file whose hash has not moved has not been touched.
 
