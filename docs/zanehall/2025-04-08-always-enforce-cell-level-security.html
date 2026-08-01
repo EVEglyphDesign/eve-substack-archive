@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Always Enforce Cell Level Security — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Always Enforce Cell Level Security</h1><p class="lede">The 00001010 Commandments of Data part 9 of 10</p></div></header><main><div class="wrap"><p class="meta">2025-04-08 &middot; <b>Zane Hall</b> &middot; 1058 words &middot; 0 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/always-enforce-cell-level-security" rel="noopener">original</a></p><p><i>The 00001010 Commandments of Data part 9 of 10</i></p>
+<p><i>(This is the ninth article in my series, “The 00001010 Commandments of Data”. You can read the introduction to this <a href="https://zanehall.substack.com/p/the-00001010-commandments-of-data?r=4chtg6" rel="noopener">series here</a>.)</i></p>
+<p>This ninth commandment of data might seem the most technical, but it&#x27;s not about technology. When I say you should always enforce cell-level security, I’m describing a way to give people access to data in the most precise way possible.</p>
+<p>To make your organization’s data the most secure, you’ll need to know two things about the people who use the data: what rows they need to see and what numbers they need to see for all those rows. By combining these two inputs, you can give people the greatest possible access to the data yet make it the most secure.</p>
+<h3>Better Access, Better Security</h3>
+<p>I’ve yet to find a single company that manages data security as effectively as I’m about to explain. Your IT department might tell you they have this under control, but it’s probably not working as I’ll describe. Most data teams say they support RBAC (role-based access control) before admitting that the “all access” job role has the most members. Even if your security policy says all the right things, almost anyone can access all your data.</p>
+<p>Digging into a data security solution to find these gaps can get technical quickly, so I’ll give you a few questions to help reveal how well things are working beneath the surface.</p>
+<ul>
+<li>Do people constantly come to your IT team asking for data? If so, you’re probably not using job roles very well.</li>
+</ul>
+<ul>
+<li>How often do people internally email large sets of data to each other? If so, the system probably isn’t giving people easy access to what they need for their jobs.</li>
+</ul>
+<ul>
+<li>Does your team maintain permissions directly on reports? If so, you’re probably not managing access as efficiently as possible.</li>
+</ul>
+<ul>
+<li>Does updating a person’s data or reporting permissions require multiple changes and tickets? If so, you probably haven’t consistently defined people’s roles for your company&#x27;s different kinds of jobs.</li>
+</ul>
+<ul>
+<li>Is copying one person’s access profile to another person a normal approach for giving people access to data? If so, you probably haven’t given business people full control of the job role definitions.</li>
+</ul>
+<p>All these symptoms expose the underlying problem with your security solution: you don’t know what data people need to do their jobs. Providing and protecting data requires understanding the people, not just the data. You need a two-dimensional solution.</p>
+<h3>Rows, Columns, and Cells</h3>
+<p>Business analytics data is two-dimensional - it’s almost always structured in tables, with rows and columns. In IT shorthand, that’s called “tabular” data, and it works a lot like the classic board game <i>Battleship</i>. Rows are sometimes called &quot;records,&quot; and columns are different facts about the records. A column and row intersection is called a “cell.” Using my example below, if I ask you for the value of cell B2, the correct answer is 26.</p>
+<img src="https://substackcdn.com/image/fetch/$s_!m2xr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9efaf3fc-1cac-458a-aecd-ac668263a37e_419x126.png" alt=""> When I say you should “secure” data at a cell level, I’m explaining that you should give people only the data they need for their job, nothing more and nothing less. If they need to see column B for their job but not column C, don’t give them permission to see both. On the other hand, if they need column B for their job, they should see that information for every row in their business data. That’s the most precise (or granular) security level possible.
+<p>Now, let’s use a table of sales order data, for example:</p>
+<img src="https://substackcdn.com/image/fetch/$s_!xw5d!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F43fccf30-0f08-4e3c-b86b-5597c17df7b3_820x163.png" alt=""> Each order is a row (or record) in the table. Key information like the customer region or the product name helps us know who needs those records for their job. A sales rep responsible for the Central US sales region doesn’t need to see orders from the Western US or Europe. They need to see prices for every order in the Central US, but they don’t need to know the cost of the products.
+<blockquote>
+<p>That’s what cell-level security does: it controls both the rows and columns people need to see.</p>
+</blockquote>
+<p>Without this awareness of what rows of data people need for their jobs, IT teams find lots of clumsy ways to secure the data. Some grant access to entire tables, while others control access to reports that pull data from the table. The first approach grants too much access to the data (every row and column in a table), while the second grants too little (only the rows and columns included in the report). Cell-level security gives people exactly what they need, no more and no less.</p>
+<h3>Success Factors</h3>
+<p>Surprisingly, a good cell-level security solution makes managing people’s data access much easier. Three factors make the difference: full business ownership of the decisions, good data classification, and a simple, single-point of maintenance.</p>
+<ul>
+<li><b>Business ownership.</b> Cell-level security requires two types of permissions, not one, and that nuance keeps most IT teams from implementing this solution properly. Business people have the management authority to decide what data people in different job roles should see.</li>
+</ul>
+<ul>
+<li><b>Good data classification</b>. As you can see from my example, <a href="https://zanehall.substack.com/p/always-warehouse-the-data-first?r=4chtg6" rel="noopener">a good data warehouse makes data easier to find</a> and easier to secure. Master data is the most straightforward way to identify the data people need for their jobs.</li>
+</ul>
+<ul>
+<li><b>Single point of maintenance</b>. The complexity of assigning permissions at the intersection of columns and rows forces you to manage all the permissions in one place. That “one place” should always be the data warehouse. Using a single point of maintenance also means only allowing one role per person. Cell-level security doesn&#x27;t work if you allow people to have multiple job roles.</li>
+</ul>
+<p>Here’s an irony: the more granularity you use to make data accessible for people inside your company, the more you protect it from outsiders. When everyone gets exactly the data they need for their job - without even asking for it - it’s like creating a thousand layers of security instead of just one. You’re not giving too much or too little access, and because of that, nobody has a reason to circumvent the security.</p>
+<p>Today<b>, </b>I’ve shown the technical side of this security solution, but you might wonder, “Who makes the decisions about what data people get to see?” Next week, I’ll explain that, showing how this approach helps business and IT leaders partner together in a way that you’ve probably never seen before.</p><div class="pager"><a href="./2025-04-01-how-to-measure-customer-value.html">&larr; How to Measure Customer Value</a><a href="./2025-04-15-use-security-to-build-great-business.html">Use Security to Build Great Business Partnerships &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

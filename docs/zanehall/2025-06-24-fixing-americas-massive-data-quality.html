@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fixing America’s Massive Data Quality Problem — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Fixing America’s Massive Data Quality Problem</h1><p class="lede">Case Study: Musk and Social Security Part 1</p></div></header><main><div class="wrap"><p class="meta">2025-06-24 &middot; <b>Zane Hall</b> &middot; 869 words &middot; 2 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/fixing-americas-massive-data-quality" rel="noopener">original</a></p><p><i>Case Study: Musk and Social Security Part 1</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!VgfC!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4946a47c-6654-4b32-801f-8a0a791ebbe4_4032x3024.jpeg" alt=""> Florida Gulf Coast, June 2025<i>This article continues my Exception Reporting focus, which you can read <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story?r=4chtg6" rel="noopener">here</a>.</i>
+<hr>
+<p>On February 16, Elon Musk <a href="https://www.newsweek.com/elon-musk-major-social-security-warning-fraud-billion-week-lost-2029244" rel="noopener">showed a spreadsheet to the cameras</a> listing 18.9 million people over the age of 112 in the Social Security system. Then he tweeted, &quot;Maybe Twilight is real and there are a lot of vampires collecting Social Security…[h]aving tens of millions of people marked in Social Security as “ALIVE” when they are definitely dead is a HUGE problem.&quot;</p>
+<p>But those “vampires” weren’t collecting benefits. It was bad data.</p>
+<p>The whole story – America’s most massive data quality problem – sounded all too familiar to people like me who struggle daily to keep data “clean” in their workplaces. Millions of Americans work in jobs that directly manage and analyze data. Sometimes, fixing data issues feels like playing Whack-A-Mole: new problems pop up faster than you can fix them.</p>
+<p>But there is such a thing as good, clean data that helps a company make better decisions. We can’t fix bad data by sharing it on television, like Musk tried, and embarrass the people who manage it. I’ve tried using email to do that, and it didn’t work either.</p>
+<p>People like us need better strategies.</p>
+<p>When I started <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story?r=4chtg6" rel="noopener">writing about Exception Reports</a> a few months ago, I didn’t expect a story like this to hit the news and provide such a great illustration for my solution to fixing bad data. But here we are and here we go. I hope the political context of this story doesn’t distract us from the core problem: we need good data. Wish me luck!</p>
+<h3>Determining “Aliveness”</h3>
+<p>The social security fraud issue isn’t new.<b> </b>In 2014 (under the Obama Administration), the agency<a href="https://www.ssa.gov/legislation/Anti-Fraud%20Initiatives%20Report%20FY2014.pdf" rel="noopener">created the Office of Anti-Fraud Program Management (OPAM)</a> to address the problem. At that time, they estimated the SSA made $124 billion in improper payments annually, mainly from benefits paid to dead people. OPAM&#x27;s efforts led the Social Security Administration (SSA) to implement a fix that prevented payments to anyone in the file over 112 years old.</p>
+<p>But they didn&#x27;t fix the underlying data problem.</p>
+<p>The agency maintains a database called the Death Master File, which contains information about people&#x27;s status (dead or alive). <a href="https://oig.ssa.gov/congressional-testimony/2015-03-17-newsroom-congressional-testimony-march16-hsgac/#:~:text=Federal%20agencies%20and%20their%20inspectors,eligibility%20before%20releasing%20Federal%20funds." rel="noopener">That file updates the SSA&#x27;s Numident (Numerical Identity) system</a>, which assigns Social Security numbers to individuals. Right or wrong, this file is the government’s source of truth for “aliveness.”</p>
+<p>Updates to the DMF file come from various sources, including family members who notify the Social Security Administration, funeral homes, financial institutions, and postal authorities.[1](#footnote-1) The problem isn&#x27;t just the 18.9 million people over 112 years old labeled as &quot;active&quot;; it also includes some 20,000 living people marked as &quot;dead.&quot; <a href="https://www.npr.org/transcripts/622040779" rel="noopener">And there&#x27;s no process to reactivate them</a>.</p>
+<hr>
+<img src="https://substackcdn.com/image/fetch/$s_!Iw-o!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1abccc21-f97b-4bbe-9e0e-c34c8695f3eb_2542x463.jpeg" alt=""> <a href="https://a.co/d/e7uApb1" rel="noopener">Buy now on Amazon</a>
+<hr>
+<h3>Eternal Debates</h3>
+<p>Only a small fraction of the 18.9 million dead people missing from the DMF would have received benefits. Social Security executives said Musk had pulled his data from the wrong Numident table. Instead of fixing the data in the Numident system (or the DMF file), the SSA added logic to their payment system that compares it to the Treasury Department&#x27;s &quot;Do Not Pay&quot; file.</p>
+<p>IT people call this approach a &quot;patch&quot; or a &quot;Band-Aid.”</p>
+<p>They went on to explain that consultants told them it would cost $9 million to fix the issue permanently, so they decided on a different solution due to the high cost and the &quot;limited benefit&quot; of fixing the data at the source. As of 2023, <a href="https://oig.ssa.gov/assets/uploads/a-06-21-51022.pdf" rel="noopener">the SSA and the Inspector General continued to argue</a> about whether they should fix the source data.</p>
+<h3>Fix Processes or Start Over?</h3>
+<p>Think about the risk workers take when changing a person’s status from alive to dead in the Social Security system. No process exists to bring them back to life. If you make a mistake, the victim can’t even own a bank account. That creates a huge disincentive for Social Security workers to update <i>anyone</i> to inactive status.</p>
+<p>No wonder the SSA resists change so strongly.</p>
+<p>Bad data always starts with a broken business process or, in this case, a completely missing process. If the SSA defined a secure way to bring people back to life in the system, data quality might naturally improve, and they might avoid that $9 million consulting fee to fix the issue.</p>
+<p>Chief Information Officers (CIOs) hear stories similar to the Death Master File data issue all the time in their companies; the debates about fixing data seem to extend into eternity. After working through the code, Musk and DOGE finally decided it would be easier to recreate entire systems than to fix them. You might recognize that pattern: many large companies make the same decision when they acknowledge the fragility of their business systems. They replace the software altogether.</p>
+<p>The SSA could have used <a href="https://zanehall.substack.com/p/exception-reports-the-power-of-a?r=4chtg6" rel="noopener">a good Exception Reporting system</a> long ago. If I’m lucky, maybe DOGE will take my advice and install that solution, but I’m not waiting for that. We can all rewrite this story in our own workplaces, using good data quality management to breathe new life into our companies and make it a cultural value. <a href="https://zanehall.substack.com/p/write-business-rules-not-code?r=4chtg6" rel="noopener">Fix data at its source instead of writing more code</a>. Fix processes before firing the people. Make real, lasting fixes to the data.</p>
+<p>[1](#footnote-anchor-1)<i>You can query the DMF database here: <a href="http://sortedbyname.com" rel="noopener">SortedByName.com</a>. I checked the data for myself and some of my extended family, and fortunately, all the data was accurate.</i></p><div class="pager"><a href="./2025-06-17-the-feedback-every-data-team-needs.html">&larr; The Feedback Every Data Team Needs</a><a href="./2025-07-01-lessons-learned-from-americas-massive.html">Lessons Learned From America&#x27;s Massive Data Quality Problem &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

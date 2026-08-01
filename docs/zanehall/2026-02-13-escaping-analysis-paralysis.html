@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escaping Analysis Paralysis  — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Escaping Analysis Paralysis </h1><p class="lede">The Hidden Cost of Chasing Precision</p></div></header><main><div class="wrap"><p class="meta">2026-02-13 &middot; <b>Zane Hall</b> &middot; 789 words &middot; 1 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/escaping-analysis-paralysis" rel="noopener">original</a></p><p><i>The Hidden Cost of Chasing Precision</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!f-Ls!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1a4d7419-37ed-43c7-bcba-e612c89fd52c_5697x3392.jpeg" alt="">
+<ul>
+<li>I’m excited to have Yakov Shkolnikov contribute to <a href="https://zanehall.substack.com/" rel="noopener">Frictionless Data</a>. Many of my articles were inspired by conversations with Yakov; he’s one of the most outside-the-box thinkers I know. You can follow <a href="https://theincompleteguidetoai.substack.com/" rel="noopener">Yakov’s Substack here</a> and read his bio at the end of this article. - ZH</li>
+</ul>
+<p>Early in my career, a client asked me to conduct a comprehensive safety analysis for an industrial site. They wanted precise risk exposure values and calculations. My preliminary assessment showed something critical: regardless of how precisely I measured the risk, the safety recommendation never changed. The employees should wear personal protective equipment. I gave them the answer upfront.</p>
+<p>Don’t chase perfect precision - you can’t achieve it anyway. Instead, make the decision itself the primary focus. Demanding too much precision can freeze your organization.</p>
+<blockquote>
+<p>The goal isn’t perfect data - it’s making a good business decision.</p>
+</blockquote>
+<h3>Precision or Decision?</h3>
+<p>A marketing director once commissioned weeks of work to measure campaign lift. The signal was smaller than the weekly noise. No analytical sophistication could extract what wasn’t there. He recognized this, killed the request and the campaign budget.</p>
+<p>An analyst spent two weeks building an elaborate forecasting model. A spreadsheet with simple moving averages beat it. When outcomes land on the same side of your decision boundary, whether the number reads 47 or 53, additional precision costs you without changing what you do.</p>
+<p>This pattern - focusing on precision over decisions - repeats everywhere.</p>
+<h3>A Supply Chain Reality</h3>
+<p>Low-volume manufactured products with intermittent demand reveal this sharply. One week, your customers place no orders. Then, the next week: 3,000 units. The week after, five hundred. Your customers often don’t even know their own buying patterns, even just a few weeks ahead of their purchases. So why pour resources into perfect demand forecasts?</p>
+<p>Have you asked your customers about their ordering windows, seasonal patterns, or upcoming projects? They may have insights that no model captures. When you do this, you’ll realize what actually matters: inventory planning aligned with service level targets and acceptable excess risk. Talking with your customers beats automated forecasts almost every time.</p>
+<blockquote>
+<p>Stop optimizing the forecast. Start optimizing the decision.</p>
+</blockquote>
+<h3>When Precision Actually Matters</h3>
+<p>Some cases really do demand rigor. Demand elasticity errors in pricing strategy can bleed margin away. Miscalculated regulatory thresholds trigger compliance violations. When potential outcomes cross a decision boundary, different numbers produce different actions.</p>
+<p>How much of your analytic efforts demand this much precision? Most organizations never ask. They default to over-analysis because it’s safer; nobody will criticize you for doing more work. Acting on incomplete-looking information invites heavy questioning. A thick report provides comfort regardless of the outcome.</p>
+<p>But that comfort costs you.</p>
+<h3>Broken Handoffs vs. Shared Ownership</h3>
+<p>External forces buffet every business far more than any data model captures. This demands something different: data teams working directly with business outcome owners.</p>
+<p>Data analysis often becomes disconnected from decisions. Data teams optimize for statistical purity, while business teams make decisions in isolation. Information passes between the teams, but they don’t share ownership over the decisions. Both sides over-engineer their domain.</p>
+<p>When data teams and decision-makers operate as one unit, something shifts. Analysis targets only what changes the decision. Unnecessary precision evaporates. Speed increases. Both sides understand what “done” means because they share accountability.</p>
+<p>Before your next analysis, ask one hard question: Would a different answer change what you do?</p>
+<p>If outcomes across the plausible range all point to the same action, stop. You have what you need. If the decision were to flip only if the number moved dramatically, and market conditions already change faster than that, then stop.</p>
+<ul>
+<li>If this feels uncomfortable, examine that discomfort; it might signal genuine rigor. More likely, however, it reflects habit. The pull toward another refinement round often means you’re over-optimizing the data.</li>
+</ul>
+<ul>
+<li>Design your organization so that decisions drive analysis, not the other way around. Reduce uncertainty risk by clarifying and aligning on the decision, not by chasing perfect numbers. Preserve analytical resources for the rare cases where precision genuinely shifts what you do.</li>
+</ul>
+<p>Make the decision your focus, not the precision. That’s your escape from analysis paralysis.</p>
+<p>About Yakov Shkolnikov:</p>
+<p>Yakov is an AI systems architect with 20+ years building production AI, from early CNN systems deployed for radar applications in 2010 to enterprise GenAI platforms today. He has advised both internal and external organizations on AI and data strategy, built teams from the ground up, and led work in edge AI, forecasting, and optimization at Fortune 500 scale. His work has driven enterprise-wide impact across products, operations, and strategy.</p>
+<p>Yakov holds a Ph.D. from Princeton and is an IEEE Senior Member.</p>
+<p>Thanks for reading Frictionless Data! Subscribe for free to receive new posts and support our work.</p><div class="pager"><a href="./2026-02-10-getting-out-of-technical-debt.html">&larr; Getting Out of (Technical) Debt</a><a href="./2026-02-17-try-systems-thinking.html">Try Systems Thinking &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

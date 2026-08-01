@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exception Reports: The Power of a Simple Solution — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Exception Reports: The Power of a Simple Solution</h1><p class="lede">Exception Report Series, Part 2</p></div></header><main><div class="wrap"><p class="meta">2025-05-13 &middot; <b>Zane Hall</b> &middot; 969 words &middot; 3 reactions &middot; 4 comments &middot; <a href="https://zanehall.substack.com/p/exception-reports-the-power-of-a" rel="noopener">original</a></p><p><i>Exception Report Series, Part 2</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!lQXr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb845efc0-c097-4fdd-809a-fada03bb980a_5712x4284.jpeg" alt="">
+<ul>
+<li><i>This article continues my three-part series on “Exception Reporting,” a counterintuitive approach to improving data quality. Read the first and third installments here: <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story?r=4chtg6" rel="noopener">Exception Reports: An Origin Story</a> and <a href="https://zanehall.substack.com/p/write-business-rules-not-code" rel="noopener">Write Business Rules, Not Code</a>.</i></li>
+</ul>
+<hr>
+<p>As I neared the end of my presentation, speaking to an audience of a hundred IT workers, I suddenly had everyone&#x27;s full attention.</p>
+<p>All-hands meetings for IT teams might be the driest stuff you could ever sit through, so this took me by surprise. I was the last speaker, and I finished my talk by explaining how Exception Reports worked.</p>
+<p>I explained that Exception Reports give people a real strategy to fix data permanently. My simple solution didn’t depend on technology; instead, I showed them how to set up an ongoing business process that helped people improve their data every day. We needed this because even though people might care enough to fix the data problems that get in their way, they usually don’t try to fix <i>all </i>the bad data in the system.</p>
+<p>“They don’t think it will make any difference. They don’t think their work will matter to anyone.” I said.</p>
+<p>I think I saw tears in some of their eyes. After all, IT people want their work to make a lasting impact, just like anyone else.</p>
+<p>Why don’t people fix bad data? Maybe they&#x27;re overwhelmed because there’s so much of it. Maybe they’re afraid of unknown consequences or don&#x27;t know how to fix the problem. Maybe they don’t know who should fix it. And with no plan to fix all of it, they know the truth: nobody cares.</p>
+<p>I’ve got a plan, and I know it works: Exception Reports.</p>
+<p>An Exception Report takes a business rule, applies it to all the data, notifies the data owner of the errors, and tracks their progress in fixing the data. Last week, I told you the story about how <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story?r=4chtg6" rel="noopener">my boss and I developed this solution</a>, and today, I’ll walk you through the process of creating an Exception Report.</p>
+<h3>A Step-by-Step Guide</h3>
+<p>Here&#x27;s how the Exception Reporting process works:</p>
+<p><b>First, somebody states a rule in plain language, usually in one short sentence.</b> For example, “Every employee should be assigned a department number.” That might sound simple, but beware: this is the hardest part of the process. (I will cover this in part 3 of this series.)</p>
+<ul>
+<li><b>Second, identify the rule owner.</b> Every business rule must be assigned to a specific person who knows how to fix the bad records. If the person asking for the Exception Report can’t name the owner, put the request on hold until they do.</li>
+</ul>
+<ul>
+<li><b>Third, translate the rule into a database query.</b> A data team can easily convert a well-defined business rule into a SQL statement.</li>
+</ul>
+<ul>
+<li><b>From this point, the system takes over, emailing the rule owner a list of records that violate the rule every day</b>. When the number of bad records hits zero, the owner no longer receives emails.</li>
+</ul>
+<p>Setting up a new Exception Report like this only takes a few minutes. When people discover a new business rule, they should expect to receive notifications the next day.</p>
+<p>You don&#x27;t need to buy software to set up a good exception reporting capability like this; it&#x27;s best to create the tool directly in your existing data warehouse. You&#x27;ll need three tables (rules, subscribers, and logging) and a daily job schedule to run the rule, log the count, and mail the output to the data owner.</p>
+<h3>A Sticky Solution</h3>
+<p>Exception Reports give people a real strategy for making their work stick.</p>
+<p>Exception Reporting tracks errors over time (as shown below) and gives executives a view of people’s progress. People get credit for their work. Once they eliminate all the bad data (shown by the green zeroes), their exception report becomes an alert system, helping them recognize and fix new errors before they destroy a report or some other business process.</p>
+<img src="https://substackcdn.com/image/fetch/$s_!-q95!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1a4506d-6555-491c-9380-2bd1a06636f1_970x190.png" alt=""> Think about the power of this “metadata” (data about your data). Measuring hundreds of business rules simultaneously, like Broadcom and Maxim did, creates a brand-new capability: everyone sees (visually) where your company’s overall data quality stands.
+<p>My simple solution assumes you have all the data from source systems in a data warehouse, but don&#x27;t worry if you don&#x27;t have lots of raw data stored there already. When people recognize how helpful they are, Exception Reports <a href="https://zanehall.substack.com/p/always-warehouse-the-data-first?r=4chtg6" rel="noopener">will make your data warehouse a magnet for more data</a>. People ask you to add more data to it because they know their data will get cleaned up, not just stored for later use. IT people call this phenomenon &quot;data gravity.&quot;</p>
+<p>You might wonder why every company doesn’t use Exception Reports like this. The sad reality is that almost all business leaders just want to spend money to solve data problems. They pitch massive “transformation” projects that replace entire software systems instead of managing the data better. I’ve seen multi-million dollar projects that could have been avoided with Exception Reports. Those leaders fail to enforce business rules and don’t hold people accountable for fixing the data. IT teams install the new system, then move on to the next project and don’t focus on data quality. Again and again.</p>
+<p>If you think I’m on a mission to change this situation, you’re right. I was lucky enough to have support from executives at Broadcom and Maxim who saw this vision and cared about data quality. People saw they cared, which didn’t just lead to better data quality but also better quality of life for the people doing the work. Executives with a vision like that are rare.</p>
+<p>People need a plan to improve data quality that makes a real difference. What’s the best way to know you’ve changed that story? When people see bad data, they know what to do.</p>
+<p>They ask for an Exception Report.</p><div class="pager"><a href="./2025-05-06-exception-reports-the-origin-story.html">&larr; Exception Reports: The Origin Story</a><a href="./2025-05-20-the-first-four-hires-for-your-data.html">The First Four Hires for Your Data Team &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

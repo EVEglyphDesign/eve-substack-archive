@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pinpointing a Data Problem — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Pinpointing a Data Problem</h1><p class="lede">How to find the friction in your data solution</p></div></header><main><div class="wrap"><p class="meta">2025-06-10 &middot; <b>Zane Hall</b> &middot; 559 words &middot; 2 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/pinpointing-a-data-problem" rel="noopener">original</a></p><p><i>How to find the friction in your data solution</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!LvdR!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F493b1f28-bab8-4ce3-b3d0-32952d42fd72_5712x4284.jpeg" alt="">
+<ul>
+<li>Finding a counterfeit dollar bill isn’t as difficult as you might think...<a href="https://www.secretservice.gov/sites/default/files/reports/2020-12/KnowYourMoney.pdf" rel="noopener">if you know what to look for</a>.</li>
+</ul>
+<p>Here’s some simple tricks: touch it, tilt it, look through it, look at it. Does it feel waxy? Does it have a holographic stripe? When you hold it up to light, do you see a watermark? Does the printing have fine, sharp lines? With these simple tests, almost anyone can find a counterfeit in a stack of bills.</p>
+<p>People who work in cash-handling jobs do this so often with legitimate bills that a counterfeit just jumps out at them. They know intuitively what a genuine bill looks and feels like, making it easy to recognize the fakes.</p>
+<p>When I recently shared my data strategies with a group of CIOs, they asked if I had an easy way to evaluate a company’s data architecture. CFOs and CIOs usually know when there’s friction in their data solutions, but it’s not easy for them to pinpoint the root causes. To do that, you need a deep understanding of how data <i>should</i> flow through your company’s business processes and systems. But if you’ve never handled data at a company that manages it well, the clear signs might not jump out at you.</p>
+<p>A good “touch test” can help.</p>
+<hr>
+<img src="https://substackcdn.com/image/fetch/$s_!Iw-o!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1abccc21-f97b-4bbe-9e0e-c34c8695f3eb_2542x463.jpeg" alt=""> <a href="https://a.co/d/e7uApb1" rel="noopener">Buy now on Amazon</a>
+<hr>
+<h3>Touch, Tilt, and Look</h3>
+<p>Here are four simple indicators - ways to touch, tilt, and look at the data - that people in any company can use to get a quick sense of how well they manage their data.</p>
+<p><b>Manual journal entries</b>. If you’ve got too many manual journal entries, it’s a sign of problems with the business processes and systems feeding the general ledger (GL) accounting system.</p>
+<ul>
+<li><b>Analytic reports.</b> If you’ve got too many analytic reports, it’s a sign of a poorly managed data platform.</li>
+</ul>
+<ul>
+<li><b>Data pipelines. </b>If you have too many data pipelines (programs that move data), it&#x27;s a sign of lazy project management—always finding the quickest way to meet the project timeline instead of investing in efficient, reliable solutions that reduce complexity.</li>
+</ul>
+<ul>
+<li><b>Business applications.</b> If you’ve got too many business applications, it&#x27;s a sign of a missing enterprise architecture.</li>
+</ul>
+<p>Count each of these for the quick test, then continue to count them over time so you can track your progress.</p>
+<h3>See The Forest</h3>
+<p>When you manage a data platform, you see the health of your company’s data from the highest viewpoint. Don’t waste that visibility; use these indicators, which I’ve described, as a good first step in helping your business and IT colleagues pinpoint data problems and prioritize better solutions.</p>
+<p>When you count the journal entries, for example, you start to notice where they cluster, and you’ll see areas where the most manual adjustments are needed. You’ll find that the reports and software “workarounds” also concentrate on those same areas. Then you step back and see the forest (not just the trees), and you might even find that your company uses two different, parallel, competing processes for the same thing, like paying vendors. Then you find that the problem has frustrated business teams for a long time. That’s a real example.</p>
+<p>Whatever you do, please don’t turn these counts into a metric. People will find all kinds of ways to game those metrics. Think of these indicators as a way to help your team “touch, tilt, look through, and look at” your data architecture.</p><div class="pager"><a href="./2025-06-02-lets-game-the-casino.html">&larr; Let’s Game The Casino</a><a href="./2025-06-17-the-feedback-every-data-team-needs.html">The Feedback Every Data Team Needs &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

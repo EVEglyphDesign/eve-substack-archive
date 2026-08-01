@@ -1,0 +1,51 @@
+{
+ "_note": "EVEglyphDesign Substack register. 'ingest': true means scripts/ingest.py --all will mirror the full archive. Set a source to true and re-run to add it.",
+ "generated_for": "EgD — single reading surface, no click-through to Substack",
+ "sources": [
+  {
+   "key": "zanehall",
+   "host": "zanehall.substack.com",
+   "title": "Frictionless Decisions",
+   "author": "Zane Hall",
+   "relationship": "Prior-client colleague. Author, consultant, board member. Agreed to review the EVEglyphDesign position paper.",
+   "subject": "Managing decisions with data, written for leaders. Data quality, exception reports, data teams, business ownership of data.",
+   "ingest": true
+  },
+  {
+   "key": "wrightreport",
+   "host": "wrightreport.substack.com",
+   "title": "The Wright Report",
+   "author": "Bryan Dean Wright",
+   "relationship": "Subscribed. Daily geopolitical and economic briefing.",
+   "subject": "Geopolitics, national security, economics.",
+   "ingest": false
+  },
+  {
+   "key": "ramikrispin",
+   "host": "ramikrispin.substack.com",
+   "title": "Rami Krispin's Newsletter",
+   "author": "Rami Krispin",
+   "relationship": "Subscribed. Data engineering and open-source tooling.",
+   "subject": "Data engineering, forecasting, MLOps, open-source data tooling.",
+   "ingest": false
+  },
+  {
+   "key": "aisupremacy",
+   "host": "aisupremacy.substack.com",
+   "title": "AI Supremacy",
+   "author": "Michael Spencer",
+   "relationship": "Subscribed. Large AI-industry publication.",
+   "subject": "AI industry analysis, model releases, market commentary.",
+   "ingest": false
+  },
+  {
+   "key": "transformation-advantage",
+   "host": null,
+   "title": "The Transformation Advantage",
+   "author": "Ashutosh Bansal",
+   "relationship": "Subscribed via LinkedIn. Not a Substack — the ingester cannot reach it.",
+   "subject": "Semiconductor S&OP and IBP, FP&A, financial digital twins, SAP.",
+   "ingest": false
+  }
+ ]
+}

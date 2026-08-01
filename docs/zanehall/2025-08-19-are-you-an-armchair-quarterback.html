@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Are You an Armchair Quarterback? — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Are You an Armchair Quarterback?</h1><p class="lede">Data Management Best Practices for Leaders</p></div></header><main><div class="wrap"><p class="meta">2025-08-19 &middot; <b>Zane Hall</b> &middot; 584 words &middot; 1 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/are-you-an-armchair-quarterback" rel="noopener">original</a></p><p><i>Data Management Best Practices for Leaders</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!Av6E!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a8f9983-d0e5-41de-b13b-f9e34a0f066e_2816x1536.png" alt="">
+<ul>
+<li>When I told my friend – the best data architect I know – about my idea for last week’s article &quot;<a href="https://zanehall.substack.com/p/avoid-best-practices-at-all-costs?r=4chtg6" rel="noopener">Avoid Best Practices at All Costs</a>,&quot; he thought I’d lost my mind. After I gave him a few examples of what I meant by my title, he said, &quot;Oh, now I get it. You&#x27;re writing to executives.&quot;</li>
+</ul>
+<p>Ouch.</p>
+<blockquote>
+<p>It’s easy for an executive to become an armchair quarterback.</p>
+</blockquote>
+<p>Have you ever met a CIO who started their career developing data solutions? Most I’ve known came up through the ranks as system technicians or software managers. They haven’t worked as a business analyst using data to answer questions. On the other hand, many CFOs begin their careers as analysts, but their technical skills often remain limited to writing Excel macros. Very few executives understand the daily challenges people face when using and creating analytic solutions.</p>
+<p>Making matters worse, they often rely on vendors for ideas. Vendors sell solutions to executives that oversimplify data work, overpromise outcomes, add complexity, and sometimes even counteract good data management practices. If you’re an executive directing your company’s data strategy, the odds for success are stacked against you. You have all the responsibility, but you may not have a solid grasp of the real best practices.</p>
+<p>You could use some help to bridge the gap. Here’s the first step: avoid becoming an armchair quarterback.</p>
+<h3>Confidence vs. Competence</h3>
+<p>“Armchair quarterback” was a perfect description of me when I started managing data teams. I was often the manager who confidently shared opinions but lacked the knowledge and experience in the subject I was commenting on.</p>
+<p>That&#x27;s a simplified explanation of <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect" rel="noopener">the Dunning-Kruger effect</a>, which describes how people overestimate their skills when they actually know very little about a subject, like an executive making technical decisions about their company’s data solution.</p>
+<img src="https://substackcdn.com/image/fetch/$s_!agI9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F02281aef-a786-4c28-af4e-0eadad43d05e_1231x1024.png" alt=""> I&#x27;ve been that executive, made those decisions, and then found myself standing on the peak of Mount Stupid.
+<p>For example, my simplistic business thinking once led me to believe that an invoice would accompany every shipment my company made. In reality, a shipment to a customer may include items from multiple orders. Linking shipments to orders involves connections to numerous business processes, not just invoices. If I forced my team to fit the data to my oversimplified understanding of this relationship, I would have made their work more difficult and less accurate. Writing the most efficient code possible to connect that data wasn’t the best solution.</p>
+<p>Like an NFL quarterback trying to throw a football into triple coverage, that pass probably won’t connect, no matter how well he throws the ball. More often than not, learning more about how the business works leads to a better solution.</p>
+<h3>Bridging the Gap</h3>
+<p>With help from my teams, I’ve created a list of best practices for managing data that addresses both business and technical mistakes. These best practices apply to any data solution in any company, regardless of its industry or technology. I’ve written an article explaining each one:</p>
+<p><a href="https://zanehall.substack.com/p/first-commandment-never-mask-bad?r=4chtg6" rel="noopener">Always fix data at the source</a>.</p>
+<ul>
+<li><a href="https://zanehall.substack.com/p/second-commandment-never-give-anyone?r=4chtg6" rel="noopener">Never give access to raw data</a>.</li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/never-use-reports-to-manage-business?r=4chtg6" rel="noopener">Never use reports to manage business logic.</a></li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/always-define-the-system-of-record?r=4chtg6" rel="noopener">Always define the system of record</a>.</li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/never-break-the-link-between-the?r=4chtg6" rel="noopener">Never break the link between the business activity and the metrics</a>.</li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/always-measure-the-whole-before-the?r=4chtg6" rel="noopener">Always measure the whole before measuring the parts</a>.</li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/always-warehouse-the-data-first?r=4chtg6" rel="noopener">Always warehouse the data first</a>.</li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/always-store-data-as-journals?r=4chtg6" rel="noopener">Always store data as journals.</a></li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/always-enforce-cell-level-security?r=4chtg6" rel="noopener">Always enforce cell-level security.</a></li>
+</ul>
+<ul>
+<li><a href="https://zanehall.substack.com/p/use-hierarchies-to-help-people-understand?r=4chtg6" rel="noopener">Always use hierarchies to align business definitions.</a></li>
+</ul>
+<p>Following these best practices will help you bridge that gap between business and technical expertise - and avoid armchair quarterback syndrome.</p><div class="pager"><a href="./2025-08-12-avoid-best-practices-at-all-costs.html">&larr; Avoid “Best Practices” at All Costs</a><a href="./2025-08-26-a-world-without-reports.html">A World Without Reports &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

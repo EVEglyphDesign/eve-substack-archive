@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lessons Learned From America's Massive Data Quality Problem — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Lessons Learned From America&#x27;s Massive Data Quality Problem</h1><p class="lede">Case Study: Musk and Social Security Part 2</p></div></header><main><div class="wrap"><p class="meta">2025-07-01 &middot; <b>Zane Hall</b> &middot; 722 words &middot; 0 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/lessons-learned-from-americas-massive" rel="noopener">original</a></p><p><i>Case Study: Musk and Social Security Part 2</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!Kh9F!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3d8b906f-4cf8-4043-bbba-cba4f87be31e_4032x3024.jpeg" alt="">
+<ul>
+<li>Wilderness Lodge, Orlando, Florida, June 2025<i>This article continues my Exception Reporting focus, which you can read <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story?r=4chtg6" rel="noopener">here</a>.</i></li>
+</ul>
+<hr>
+<p>When I wrote last week about the <a href="https://zanehall.substack.com/p/fixing-americas-massive-data-quality?r=4chtg6" rel="noopener">massive data issues in America’s Social Security system</a>, I knew I was wading into hot water. Elon Musk <a href="https://www.newsweek.com/elon-musk-major-social-security-warning-fraud-billion-week-lost-2029244" rel="noopener">shared a spreadsheet</a> on television showing some 18.9 million people over 112 years old listed as “alive” in the Social Security system. He then <a href="https://x.com/elonmusk/status/1891350795452654076" rel="noopener">speculated on X</a> that many of these people were still receiving payments.</p>
+<p>They weren’t receiving payments, and the unfortunate analyst who shared that data with Musk apparently pulled it from the wrong system. The SSA patched the benefits system years earlier to prevent such payments but didn’t fix the bad data where it started.</p>
+<p>The complexities of this problem obviously go way beyond data quality. You’ll find the same thing at most American companies; bad data is usually just the tip of the iceberg. But you need to start somewhere, so I’ll use the chaos in America’s data to show some data quality principles that everyone can understand.</p>
+<p>You won’t need any technical knowledge to follow these ideas, and (ironically) that’s the lesson I’ve learned managing technical teams for a few decades. Without applying good business management skills to your data, your technical work could make matters worse.</p>
+<h3>Principles for Better Data</h3>
+<p>Use these simple approaches to manage data quality better:</p>
+<p><b>Always measure a data problem before solving it</b>. As I wrote in my Exception Reporting articles, always define the business rules and count the errors before deciding how to fix the data. Data engineers refer to this tactic as &quot;data profiling.&quot; It&#x27;s a discipline that helps you patiently sort through issues and fully understand the sources of bad data. Guessing the causes and their impact (as Elon Musk did) doesn&#x27;t help people align on the solutions.</p>
+<p>Those 18.9 million “exceptions” happened for at least three reasons. DOGE can state each business rule to pinpoint the issues.</p>
+<p>People reported “dead” in the government’s Death Master File should not be active in the Social Security system.</p>
+<ul>
+<li>People over 112 years old in the Social Security system should always appear in the Death Master File.</li>
+</ul>
+<ul>
+<li>People reported as “dead” in either system should not receive payments.</li>
+</ul>
+<p><b>Fix obvious errors first</b>. Musk rightly followed one of the most basic rules of data quality management: focus on the indisputable issues first. Fixing that data might not solve any immediate problem, but eliminating obvious errors makes the more complex cases easier to find. The real fraud problem in social security is not the 150-year-old people; it&#x27;s the 77-year-olds who passed into eternity 10 years earlier. Somebody might cleverly adopt their identity and live off their benefits.</p>
+<p>Identifying the truly bad data without cleaning out the huge set of harmless data errors is much more difficult.</p>
+<p><b>Fix the process before modifying the system</b>. Bad data usually results from a missing or broken business process. Those processes almost always relate to maintaining master data, like people, products, or customers.</p>
+<p>Similarly, the Social Security system doesn’t have a process to “reactivate” a person accidentally changed to “dead” in its systems, which creates disincentives to inactivate anyone. If they fix the data but don’t fix this business process gap, the bad data will reappear.</p>
+<p><b>Beware of confirmation bias. </b>It&#x27;s not true that 18.9 million dead people are receiving Social Security payments. Musk fell victim to the common tendency to trust data that confirms your preexisting beliefs. Lots of people think they’re “following the data” without realizing they’ve made a complete leap of faith.</p>
+<p>Let the data tell the story instead of assuming it proves your case.</p>
+<p><b>Collaborate. </b>Showing bad data on national television makes for good entertainment, but it might not convince the people you need to fix the data to do the work. By capturing good business rules, you can depersonalize data problems and help everyone treat data quality as a shared mission. It might sound quaint, but your most important asset in this effort is the trust of the people you work with. DOGE can’t improve the data permanently without the buy-in from the Social Security teams who manage it.</p>
+<p>Like a dentist fixing your cavities, try using these lessons to develop a gentle touch and help your colleagues <a href="https://zanehall.substack.com/p/exception-reports-the-power-of-a?r=4chtg6" rel="noopener">fix their data permanently</a>. That’s the secret to avoiding the hot water that bad data can lead you into.</p>
+<hr>
+<img src="https://substackcdn.com/image/fetch/$s_!Iw-o!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1abccc21-f97b-4bbe-9e0e-c34c8695f3eb_2542x463.jpeg" alt=""> <a href="https://a.co/d/e7uApb1" rel="noopener">Buy now on Amazon</a><div class="pager"><a href="./2025-06-24-fixing-americas-massive-data-quality.html">&larr; Fixing America’s Massive Data Quality Problem</a><a href="./2025-07-08-the-great-american-data-road-trip.html">The Great American (Data) Road Trip &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

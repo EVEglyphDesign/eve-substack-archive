@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Never Give Anyone Access to Raw Data — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Never Give Anyone Access to Raw Data</h1><p class="lede">Huntington Beach, CA, October 2024 </p></div></header><main><div class="wrap"><p class="meta">2024-10-22 &middot; <b>Zane Hall</b> &middot; 619 words &middot; 2 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/second-commandment-never-give-anyone" rel="noopener">original</a></p><p><i>Huntington Beach, CA, October 2024 </i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!qgOC!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa5b3f6c-3c82-4b84-b4ab-cb202d59e47f_3515x1905.jpeg" alt="">
+<ul>
+<li><i>(This is the second article in my series, “The 00001010 Commandments of Data”. You can read the introduction to this series <a href="https://zanehall.substack.com/p/the-00001010-commandments-of-data?r=4chtg6" rel="noopener">here</a>.) </i></li>
+</ul>
+<p><a href="https://zanehall.substack.com/subscribe?" rel="noopener">Subscribe now</a></p>
+<p>Rules always offend someone, especially when they’re as unilateral as this one:</p>
+<p><i>Never give anyone access to raw data. </i></p>
+<p>Even people who agree with me on this rule have a hard time enforcing it. That’s why I like calling it a “commandment”; if you want to achieve the goals of a data strategy, you’ll need to stick to your guns on this one.</p>
+<p>I’m here to help.</p>
+<p>Raw data is simply copies of the tables from your company business systems. That’s my technical definition. But for most people who spend their time hunting and gathering data, it’s simply any data that they haven’t modified yet. People who consume data often don’t know the real origins (“lineage”) of the data they use for decisions; they only know it’s not ready for use without their own changes. It’s raw.</p>
+<p>Here’s why you need this commandment:</p>
+<p>Raw data lacks context.</p>
+<ul>
+<li>Raw data creates chaos for business logic.</li>
+</ul>
+<ul>
+<li>Raw data disconnects lineage.</li>
+</ul>
+<ul>
+<li>Raw data performs badly.</li>
+</ul>
+<ul>
+<li>Raw data doesn’t protect confidentiality.</li>
+</ul>
+<ul>
+<li>Raw data kills self-service.</li>
+</ul>
+<p>Need more reasons? You’ll never really improve your business decision-making if you expose everyone to raw data.</p>
+<h3>Self-service? Or Chaos?</h3>
+<p>I’ve seen enough data solutions to know that companies grant access to raw data all the time. How did we get here?</p>
+<p>As analytics grew in importance over the last twenty years, business managers and analysts demanded more access to data. IT leaders didn’t see this coming, and without a plan to <i>manage </i>decision data, they responded by giving everyone access to the raw data instead.</p>
+<p>Then they applied a trendy name to it – “self-service”- which sounded appealing but really led to chaos.</p>
+<p>Analysts loved it, however, because they learned new technical skills, like using visualization software to create their own dashboards from the raw data. What nobody realized was the work of organizing data shifted from IT to <i>every </i>analyst, massively exploding the volume of data preparation work in companies as analysts repeated (and repeated, and repeated) those tasks on their own desktops.</p>
+<p>Many companies generated thousands of dashboards but didn’t align their decision making at all.</p>
+<h3>Making Data Easy to Find</h3>
+<p>Good self-service requires <i>better </i>structure, not less structure. A grocery store, for example, makes finding the ingredients you need for dinner easier, <i>all by yourself</i>. They do this by storing food in sections, aisles, and shelves. The store managers don’t know what you plan to eat for dinner tonight, but they do know the common ingredients that most people use for cooking.</p>
+<p>Grocery stores also offer you <i>service</i>, like making sure your eggs aren’t broken or helping you to the car. Even though they tried to take that service away with self-checkout (which <a href="https://youtu.be/fnSN6rJ9P2w?si=v-Af248IA7O9udHC" rel="noopener">hasn’t worked out well</a>), <i>nobody </i>is suggesting they send all the shoppers to the farm or the loading dock.</p>
+<p>But that’s exactly what sending decision-makers to the raw data is like, and it doesn’t make decisions about your business (or your dinner) any faster, easier, or better.</p>
+<p>Granting access to raw data kills self-service, because everyone independently creates their own business logic to make sense of the data. That’s a formula for frustration when your CEO gets conflicting answers to the same question. If you’ve already crossed this red line, don’t give up hope. Just offer a good plan to organize the data.</p>
+<p>And whatever you do, don’t just give access to raw data. Instead, put the “service” back into self-service.</p>
+<p><i>Thanks for reading my newsletter!</i></p>
+<p><a href="https://zanehall.substack.com/p/does-your-data-flow-through-people?r=4chtg6" rel="noopener">Previous post: Does Your Data Flow Through People?</a></p>
+<p><a href="https://zanehall.substack.com/p/never-use-reports-to-manage-business?r=4chtg6" rel="noopener">Next post: Never Use Reports to Manage Business Logic</a></p>
+<p><a href="https://zanehall.substack.com/p/the-00001010-commandments-of-data?r=4chtg6" rel="noopener">Series: The 00001010 Commandments of Data</a></p><div class="pager"><a href="./2024-10-15-does-your-data-flow-through-people.html">&larr; Does Your Data Flow Through People?</a><a href="./2024-10-29-never-use-reports-to-manage-business.html">Never Use Reports to Manage Business Logic &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

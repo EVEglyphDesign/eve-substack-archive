@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visibility Can’t Wait — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Visibility Can’t Wait</h1><p class="lede">Data Management Best Practices</p></div></header><main><div class="wrap"><p class="meta">2025-09-16 &middot; <b>Zane Hall</b> &middot; 650 words &middot; 3 reactions &middot; 2 comments &middot; <a href="https://zanehall.substack.com/p/visibility-cant-wait" rel="noopener">original</a></p><p><i>Data Management Best Practices</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!nXPt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29abc490-9eeb-451b-a24e-7c10aeea6c8a_5712x4284.jpeg" alt="">
+<ul>
+<li>San Clemente, California, September 2025</li>
+</ul>
+<hr>
+<p>When my friend Yakov first used the term<b> </b>“data wrangling,” I assumed he’d just made it up. If anyone else had used that phrase, I’d assume that our company’s data was out of control, like the Wild West.</p>
+<p>But data wrangling is <a href="https://www.geeksforgeeks.org/what-is-data-munging/" rel="noopener">an official term among data scientists</a>. They use the term interchangeably with “mung”-ing (pronounced “m-uh-n-j”). It’s a word for a series of potentially destructive or irrevocable changes to a piece of data. It’s also an acronym: Mash Until No Good. The acronym evolved to mean “Mung Until No Good,” making MUNG one of the first known <a href="https://web.archive.org/web/20050424050957/http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?mung" rel="noopener">recursive acronyms in the English language</a>.[1](#footnote-1)</p>
+<p>Most data science teams are forced to use uncontrolled and sometimes unstable data sources. However, much of the data Yakov’s team used came from our data warehouse, which they appreciated because it allowed them to go straight to advanced analytics, no data wrangling or munging required. I’m sure even cowboys preferred cattle herds that moved in the right direction without wrangling.</p>
+<p>Amazingly, software vendors don’t seem to see the big picture: data wrangling is usually a necessary evil. They <a href="https://www.alteryx.com/glossary/data-wrangling#:~:text=Data%20wrangling%20is%20the%20process,solutions%2C%20decisions%2C%20and%20outcomes." rel="noopener">develop tools for self-service</a> data wrangling (a redundant term), define its steps, and create online courses to teach people how to use their munging software. However, there’s nothing new about collecting and preparing data for analysis; old-school data engineers refer to this process as “extract, transform, and load” (ETL).</p>
+<p>That’s the difference: <a href="https://businessanalytics.substack.com/p/data-wrangling-a-to-z?r=4chtg6&amp;utm_medium=ios&amp;triedRedirect=true" rel="noopener">data wranglers get the job done, right now</a>, without waiting for long approval cycles and testing. IT data engineering teams, on the other hand, set up programs that prepare data in the most failproof, high-scale way possible.</p>
+<h3>Time to Visibility</h3>
+<p>What does this funny name for a common IT data task prove?</p>
+<blockquote>
+<p>Data scientists understand this simple truth: decision-makers need to know what’s happening in the business right now. They work with urgency, doing whatever it takes to answer questions (with data) because the business demands it, even if that requires wrangling and munging.</p>
+</blockquote>
+<p>Yakov drew a diagram on my whiteboard once that illustrated this urgency. He called it “Time to Visibility.” Visibility describes how effectively a company measures its business activities. Good visibility means people can view the data from any perspective, at any level of detail, with any unit of measure, for the longest time horizon, past, present, and future.</p>
+<p>The horizontal X-axis on Yakov’s chart (below) represents time. The vertical Y-axis measures the degree to which people in your company can “see” what’s happening in the business.</p>
+<img src="https://substackcdn.com/image/fetch/$s_!T_Pc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cbf68e7-ffd4-4aa9-b5dc-fb2b26fd934a_904x456.png" alt=""> Every executive should understand two critical implications of Yakov’s chart:
+<p><b>Lack of business visibility costs money.</b> Your company may be years away from consolidating all its data into a single business system. You should do everything possible to make the data appear connected as soon as possible. Every day that decision-makers don’t have the visibility they need costs your company.</p>
+<ul>
+<li><b>Business systems shouldn’t determine your data architecture.</b> People think that good data architecture depends on understanding the layout of their business systems. That’s false. Build your data architecture to align with the decisions people make in your industry.</li>
+</ul>
+<h3>When Everyone Becomes a Wrangler</h3>
+<p>How much visibility does your company need? How long can people wait for it?</p>
+<p>Just asking these questions explains why data scientists aren’t the only data wranglers in your company. Everyone becomes a wrangler when the data they need isn’t easily accessible.</p>
+<p>That’s where a good data team makes all the difference. They have the technical skills (and tools) to make business data fit together perfectly, even if the data in your business systems looks nothing like that. They can make your data look like it should, in its end state. I call that “thought architecture” – shaping the way the business thinks, with data.[2](#footnote-2) An enterprise business system delivers far more value when its data aligns with your company’s thought architecture.</p>
+<p>Until that happens, you might need to wrangle some data.</p>
+<p>[1](#footnote-anchor-1)Dating recursive acronyms is an imprecise task, since many of them start out as “backronyms”, which are words that start as an acronym before they become a phrase. Homer Simpson invented the second recursive acronym when he defined grunge rock as “<a href="https://www.youtube.com/watch?v=Rjmzf3IETdM" rel="noopener">Guitar Rock Utilizing Nihilist GRUNGE Energy</a>.”</p>
+<p>[2](#footnote-anchor-2)AI “ontologists” use a similar concept known as “knowledge management,” something I’ll discuss more in future posts.</p>
+<hr>
+<p>To help remind you of these concepts, I’m now adding a hit 80s song to the <a href="https://open.spotify.com/playlist/4PKCEghEMZ7MxCJMwlrnFV?si=b6X-1CP0RXmRNqqQs8AK8A" rel="noopener">Frictionless Data Spotify playlist</a> each week. This week, enjoy <i><a href="https://open.spotify.com/track/7EUzbGgfQWeNN5qoTor9At" rel="noopener">See The Lights</a></i><a href="https://open.spotify.com/track/7EUzbGgfQWeNN5qoTor9At" rel="noopener">by Simple Minds</a>.</p><div class="pager"><a href="./2025-09-13-let-me-reintroduce-frictionless-data.html">&larr; Let Me Reintroduce Frictionless Data…</a><a href="./2025-09-23-the-hidden-data-framework-behind.html">The Hidden Data Framework Behind Business Decisions &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

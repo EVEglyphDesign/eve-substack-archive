@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exception Reports: The Origin Story — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Exception Reports: The Origin Story</h1><p class="lede">Exception Reports, Part 1</p></div></header><main><div class="wrap"><p class="meta">2025-05-06 &middot; <b>Zane Hall</b> &middot; 895 words &middot; 6 reactions &middot; 4 comments &middot; <a href="https://zanehall.substack.com/p/exception-reports-the-origin-story" rel="noopener">original</a></p><p><i>Exception Reports, Part 1</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!an5O!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6b89aaec-c064-4fb6-85ca-13f67158c987_5712x4284.jpeg" alt=""> Winter Garden, Florida, May 2025<i>This article is part of a three-part series on “Exception Reporting,” my counterintuitive approach to improving data quality. Follow these links to parts 2 and 3 here: <a href="https://zanehall.substack.com/p/exception-reports-the-power-of-a" rel="noopener">Exception Reports: The Power of a Simple Solution</a> and <a href="https://zanehall.substack.com/p/write-business-rules-not-code" rel="noopener">Write Business Rules, Not Code</a>.</i>
+<hr>
+<p>Tim Keller <a href="https://podcast.gospelinlife.com/e/training-in-wisdom-1635521853/" rel="noopener">defined wisdom</a> as the ability to make the right decision in a situation, even when there are many acceptable options. He&#x27;s right. Real life is situational, and you can&#x27;t write a manual big enough to tell you what to do in every circumstance. You need to develop “competence with regard to the complex realities of life…[how to understand] a particular situation and then know the right thing to do.”</p>
+<p>A wise mentor is much better than any instruction manual. That&#x27;s what makes mentors so valuable; you can always ask yourself, &quot;What would they do in this situation?&quot; instead of just looking for a set of rules.</p>
+<p>I watched my boss, Ray Vincent, in action for about twelve years. He was a math major at USC and worked his whole career in Accounting and Finance. I wondered why anyone would want to spend their college years in the abstract world of math only to spend their corporate career in something as mundane as accounting.</p>
+<p>I admired this, but I didn&#x27;t understand it. That came later.</p>
+<p>People who work in data eventually discover that learning to <i>apply </i>data to business decisions is much more complicated than moving and modifying data with software. Companies fill their teams with technical experts and expect them to know how to connect data to decision-making intuitively. Wisdom like this is not intuitive to them, and no amount of technical expertise will close that gap.</p>
+<p>Closing that gap was easy for Ray; his thought process and work ethic naturally connected the data to decisions. Looking back now, I realize that he passed that on to me. He didn’t <i>tell </i>me how to connect data to decision-making; he <i>showed </i>me.</p>
+<blockquote>
+<p>When he asked me for an “exception report,” I didn’t know he was about to show me a critical tool for improving how an entire company makes decisions.</p>
+</blockquote>
+<h3>Reversing the Flow</h3>
+<p>Ray came to my office one day in 2001 with an idea. I was managing the reporting systems at Broadcom, and Ray noticed incorrect data on the daily management report. He knew why the data was bad, and every week, he faithfully logged into the business systems to fix it.</p>
+<p>&quot;Instead of waiting to see the bad data on your report, I&#x27;ll tell you the rule to find all the errors. All you need to do is find a way to make the system send the list of exceptions to me every day,&quot; he told me.</p>
+<p>That was a simple but incredibly brilliant vision: Ray wanted to reverse the decision flow. Instead of waiting for a report to see the bad data, he wanted to fix it proactively.</p>
+<p>But he didn&#x27;t tell me how to make this happen; I had to figure that out. The first version of that application was a complete hack job, but it worked. We called the system “Exception Reports.” You’ll hear a lot of talk in the industry these days about data quality, but that name reveals something completely different about our solution: the system doesn’t fix your data, it just measures its quality.</p>
+<p>My team turned his idea into a system that anyone in the company could use to correct their data. All they had to do was tell us their business rule in plain English, and the very next day, they&#x27;d start receiving an email with the data records they needed to fix. The system tracked their progress and helped them uncover the broken business processes that led to the bad data in the first place.</p>
+<p>Ray’s vision revolutionized my thinking, and it’s still ahead of its time.</p>
+<p>These days, vendors sell “master data management (MDM)” software solutions that promise to fix your data. They override mistakes, add layers of logic, and centralize everything. Exception Reports do the opposite: they help people solve problems without IT help. They don’t fix data, they just measure the errors.</p>
+<p>The idea grew as others saw the power of Exception Reports. Maxim used them to synchronize entire enterprise systems. Broadcom and Maxim&#x27;s accountants used them to support their compliance audits. IT teams used them to make better decisions about which system fixes mattered most. People at those companies experienced the power of Exception Reports to harmonize all their data and decisions.</p>
+<h3>Correcting and Connecting Everything</h3>
+<p>What made Ray different was the way he understood business data as a <i>system</i>. He wanted to close the loop between the inputs from other systems and the outputs on the report. That&#x27;s how a mathematician thinks. Ray was willing to do the work, and he didn&#x27;t shift responsibility because he only cared about one thing: connecting the data to decisions.</p>
+<p>Fix data in the right place, and you heal the whole system; fix it in the wrong place, and you might make the system more fragile. Wisdom like this doesn’t come from a training manual. As Ray showed me, seeing good data management in practice makes all the difference.</p>
+<p>I’m looking forward to developing this idea with you much more, by explaining the systems and processes that support it and sharing some great case studies to help you catch the vision.</p><div class="pager"><a href="./2025-04-29-why-you-need-a-data-team.html">&larr; Why You Need a Data Team</a><a href="./2025-05-13-exception-reports-the-power-of-a.html">Exception Reports: The Power of a Simple Solution &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>

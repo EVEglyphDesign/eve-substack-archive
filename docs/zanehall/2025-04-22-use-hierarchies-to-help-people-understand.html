@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Use Hierarchies to Help People Understand Data — Frictionless Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdfaf4;--cream2:#f7f2e7;--ink:#1a1a1a;--line:#e7e1d3;--mute:#6b665c;--accent:#e87722}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+ font:400 17px/1.68 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line);background:var(--cream2)}
+header.top .wrap{padding-top:26px;padding-bottom:26px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;line-height:1.2;margin:38px 0 12px}
+h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:30px 0 10px}
+.lede{color:var(--mute);font-size:17px;margin:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(232,119,34,.35)}
+a:hover{border-bottom-color:var(--accent)}
+main{padding:34px 0 70px}
+.meta{font-size:13px;color:var(--mute);margin:0 0 26px}
+.meta b{color:var(--ink);font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:18px 0}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.d{white-space:nowrap;color:var(--mute);font-size:13px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--accent);color:var(--mute)}
+code{background:var(--cream2);padding:1px 5px;border-radius:3px;font-size:14px}
+img{max-width:100%;height:auto;border-radius:3px;margin:18px 0}
+hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.nav{font-size:13px;color:var(--mute);padding:16px 0;border-bottom:1px solid var(--line)}
+.pager{display:flex;justify-content:space-between;gap:16px;font-size:14px;
+ border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+footer{border-top:1px solid var(--line);background:var(--cream2);color:var(--mute);font-size:13px}
+footer .wrap{padding:22px}
+.mark{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--accent)}
+.card{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:14px 0;background:#fff}
+.card h3{margin:0 0 4px;font-size:19px}
+.card p{margin:4px 0 0;font-size:14px;color:var(--mute)}
+.off{opacity:.62}
+@media(max-width:520px){h1{font-size:27px}body{font-size:16px}}
+</style></head><body>
+<header class="top"><div class="wrap"><p class="kicker"><a href="../">Archive</a> &middot; <a href="./">Frictionless Decisions</a></p><h1>Use Hierarchies to Help People Understand Data</h1><p class="lede">00001010 Commandments of Data</p></div></header><main><div class="wrap"><p class="meta">2025-04-22 &middot; <b>Zane Hall</b> &middot; 851 words &middot; 1 reactions &middot; 0 comments &middot; <a href="https://zanehall.substack.com/p/use-hierarchies-to-help-people-understand" rel="noopener">original</a></p><p><i>00001010 Commandments of Data</i></p>
+<img src="https://substackcdn.com/image/fetch/$s_!OdI8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F65311cf9-cc25-4870-b4b2-ebae79f55810_4032x3024.jpeg" alt="">
+<ul>
+<li>Brooklyn, NY, Easter 2025<i>(This is the final article in my series, “The 00001010 Commandments of Data”. You can read the introduction to this <a href="https://zanehall.substack.com/p/the-00001010-commandments-of-data?r=4chtg6" rel="noopener">series here</a>.)</i></li>
+</ul>
+<p>Have you ever seen the massive spreadsheets some companies use to manage their data?</p>
+<p>I’ve seen situations where incredibly important reports came from workbooks with 40 or more tabs. Their huge file sizes (sometimes over 50 megabytes) and thousands of formulas made them unbearably slow. They also tortured the underappreciated analysts who put them together manually. Usually, someone downloads mountains of transaction data into one spreadsheet tab and uses the rest of the workbook to categorize the data with custom lists and lookup formulas.</p>
+<p>Why do people do this? Because their data team forces them to.</p>
+<p>When nobody takes responsibility for managing the categories used to summarize the data, people create them independently. They work in silos.</p>
+<h3>Vertical Data</h3>
+<p>I want to help you connect your data to your company&#x27;s decision-making processes. Data leaders - CIOs, CFOs, data architects, and analysts – need to understand how their company thinks and then shape their data to match it. That’s why I’m giving you this tenth commandment:</p>
+<blockquote>
+<p><b>Always use data hierarchies to align the business.</b></p>
+</blockquote>
+<p>People analyze data from different points of view. Take geography, for example. A “hierarchy” creates totals and subtotals within that perspective, like city, county, state, country, and continent. The city where I live has a population of 57,000 people, and that’s part of the 23 million people in Florida and the 340 million in the USA. When people discuss the population data, they share a common understanding of what these groups mean.</p>
+<p>Similarly, the hierarchy levels you build for products (like product lines, business units, and divisions) shape how people in your company think about your business. Unlike the geography of the United States, however, decisions about how to use hierarchies in your company often get ignored, creating chaos for everyone.</p>
+<p>If you don’t help them, people design their own hierarchies with massive spreadsheets.</p>
+<p>The image below shows how a manufacturing company can use a hierarchy to group products:</p>
+<img src="https://substackcdn.com/image/fetch/$s_!FDzi!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe951d0f3-4260-4f9f-a062-dc80a8033f42_1075x526.png" alt=""> Business processes (like purchasing and shipping) use <i>horizontal </i>product data for manufacturing. In contrast, decision-makers use <i>vertical</i> hierarchies to understand what’s happening in the business at a higher level. The vertical levels aggregate data into larger buckets: product IDs group into product families, product families fold into product lines, and product lines roll up to business units.
+<h3><b>Taking Ownership</b></h3>
+<p>When I started working in analytics 25 years ago, I knew that making sense of different types of customers was critical for decisions. So, every Friday, I spent two hours sorting all of my company’s customer data alphabetically and grouping all the locations of large customers (like Cisco) into a single “parent” customer record. Of course, this simple idea grew into more sophisticated designs for analyzing customer data, <a href="https://zanehall.substack.com/p/sales-teams-need-data-not-reports?r=4chtg6" rel="noopener">which I wrote about recently</a>.</p>
+<p>My team applied these parent mappings to all the data. These hierarchies worked great for subtotaling data on executive reports; the output looked like magic to decision-makers. Nobody had to do this sub-totaling independently, and everyone benefited from consistent views of customer data across all the data and every executive&#x27;s view of it.</p>
+<p>I did this manually for a few years until the Customer Service team took ownership of the master data hierarchies. They made linking customers to their parent customer ID part of their normal “onboarding” process. That allowed us to start adding new categories to the parent records themselves. Many business processes (like new product introductions) started using those higher-level customer names in their workflows, massively accelerating the planning process.</p>
+<h3><b>Shaping Thought</b></h3>
+<p>Here are some important “best practices” I’ve learned about data hierarchies:</p>
+<p><b>Listen</b>. The categories executives use to discuss the business are usually the best for management reporting, so listen to how they publicly describe their business and apply that to the data. Once, in an all-hands meeting at my company, the CEO explained a new customer service strategy that recognized the differences between “whales, tunas, and anchovies.” Suddenly, my team saw the best way to group our customer data.</p>
+<ul>
+<li><b>Consolidate</b>. Strictly limit the number of hierarchies you use for the same data (like products or customers). Sometimes, IT teams make things worse by creating new “alternate” hierarchies whenever their business partners ask for a new view of the data. That defeats the purpose of hierarchies: aligning how everyone understands the business.</li>
+</ul>
+<ul>
+<li><b>Share</b>. Publish the data for everyone to use. Make master data hierarchy data easy to access, not just for people creating reports, but also for IT applications. My teams created a database table for the data that anyone could access, then published an MS Excel report (updated daily) for spreadsheet users.</li>
+</ul>
+<p>You can help your company by managing how people understand the data. It’s one of the most powerful ways a data leader influences company decisions – streamlining the thought processes of the entire company. Software alone can’t translate the thoughts of your leaders and managers into data. That’s why I’m giving you this tenth (and last!) commandment:</p>
+<p><b>Always use hierarchies to help people understand data and align the business.</b></p><div class="pager"><a href="./2025-04-15-use-security-to-build-great-business.html">&larr; Use Security to Build Great Business Partnerships</a><a href="./2025-04-29-why-you-need-a-data-team.html">Why You Need a Data Team &rarr;</a></div></div></main><footer><div class="wrap">&copy; 2026 EVEglyphDesign. Reading surface, controlled copy. Key ID EgD-KEY-2026-07. Copyright in each post remains with its author; this mirror is held for private reading and review. <span class="mark">Pour le bien-&ecirc;tre du peuple</span></div></footer></body></html>
